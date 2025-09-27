@@ -1,0 +1,159 @@
+/* Polices et couleurs */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #fffdfb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Titres */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #3a3a3a;
+}
+
+a {
+  color: #c76e54;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f5f0;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #3a3a3a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  font-weight: bold;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #c76e54;
+}
+
+/* Hero */
+header.hero {
+  background-color: #f0ebe3;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+header.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+header.hero p {
+  font-size: 20px;
+  color: #7a7a7a;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.prestations ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prestations li {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Avant / Après */
+.avant-apres-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.image-block {
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.image-block:hover {
+  transform: scale(1.03);
+}
+
+.image-block img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image-block p {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Contact */
+.contact a {
+  color: #c76e54;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #f0ebe3;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .avant-apres-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
